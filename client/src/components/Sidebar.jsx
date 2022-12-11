@@ -1,10 +1,9 @@
 import React, { useEffect } from 'react';
 import { AiOutlineMenu} from 'react-icons/ai';
-import { FiShoppingBag } from 'react-icons/fi';
 import { RiLogoutBoxRLine } from 'react-icons/ri';
 import { TbBellSchool,TbWheelchair } from 'react-icons/tb';
 import { HiOutlineBuildingOffice2 } from 'react-icons/hi2';
-import { BsPersonCircle, BsCalendar2CheckFill } from 'react-icons/bs';
+import { BsPersonCircle, BsCalendar2CheckFill, BsFillChatFill } from 'react-icons/bs';
 import { FaKey, FaDoorOpen } from 'react-icons/fa';
 import { ImUsers } from 'react-icons/im';
 import { CgBox } from 'react-icons/cg';
@@ -123,7 +122,7 @@ const Sidebar = () => {
                       backgroundColor: isActive ? currentColor : '',
                     })}
                     className={({ isActive }) => (isActive ? activeLink : normalLink)}>
-                    {<FiShoppingBag />}
+                    {<BsFillChatFill />}
                     <span className="capitalize ">Czat</span>
                   </NavLink>
                   <NavLink
